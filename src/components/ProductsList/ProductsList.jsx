@@ -1,4 +1,5 @@
 import ProductCard from '../ProductCard/ProductCard'
+import './ProductsList.css'
 
 const ProductsList = ({ products }) => {
   return (

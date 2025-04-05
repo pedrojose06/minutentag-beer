@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #FF9F24; /* Primary color */
-    --color-secondary: #FFFFFF; /* Secondary color */
-    --color-text: #323232; /* Text color */
-    --color-background: #FAFAFA; /* Background color */
-    --font-primary: 'Segoe UI', sans-serif; /* Segoe UI */
+    --color-primary: #FF9F24;
+    --color-secondary: #FFFFFF;
+    --color-text: #323232;
+    --color-background: #FAFAFA;
+    --font-primary: 'Segoe UI', sans-serif;
 }
 
 #root {

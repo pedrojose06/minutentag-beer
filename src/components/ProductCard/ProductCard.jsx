@@ -1,8 +1,9 @@
 import { IoAdd } from 'react-icons/io5'
-import { useNavigate } from 'react-router-dom' // Import useNavigate
+import { useNavigate } from 'react-router-dom'
+import './ProductCard.css'
 
 const ProductCard = ({ product }) => {
-  const navigate = useNavigate() // Initialize navigate
+  const navigate = useNavigate()
 
   const handleClick = () => {
     navigate(`/products/${product.id}`)
