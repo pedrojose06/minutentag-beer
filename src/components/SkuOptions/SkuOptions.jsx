@@ -1,12 +1,15 @@
-const SkuOptions = ({ sku, setActiveSku }) => {
+import SkuOption from '../SkuOption/SkuOption'
+
+const SkuOptions = ({ skus, setActiveSku }) => {
   return (
-    <div
-      key={sku.code}
-      style={{ border: '1px solid black', padding: '10px' }}
-      onClick={() => setActiveSku(sku.code)}
-    >
-      <div>{sku.name}</div>
-    </div>
+    <>
+      <h3>Size</h3>
+      <div style={{ display: 'flex', gap: '10px' }}>
+        {skus.map((sku) => (
+          <SkuOption key={sku.code} sku={sku} setActiveSku={setActiveSku} />
+        ))}
+      </div>
+    </>
   )
 }
 export default SkuOptions

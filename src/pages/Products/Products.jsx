@@ -1,7 +1,8 @@
 import { useQuery } from '@apollo/client'
 import ProductsList from '../../components/ProductsList/ProductsList'
 import { GET_PRODUCTS } from '../../graphql/Querys'
-import { IoMenuOutline, IoPersonCircleOutline } from 'react-icons/io5'
+import {} from 'react-icons/io5'
+import ProductHeader from '../../components/ProductHeader/ProductHeader'
 
 const Products = () => {
   const { loading, error, data } = useQuery(GET_PRODUCTS, {
@@ -14,11 +15,7 @@ const Products = () => {
 
   return (
     <section>
-      <IoMenuOutline />
-      <IoPersonCircleOutline />
-      <h4>Hi, Mrs Michael</h4>
-      <h2>Welcome back!</h2>
-      <h3>Ours Products</h3>
+      <ProductHeader />
       <ProductsList products={data.getAllProducts} />
     </section>
   )

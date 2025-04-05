@@ -1,0 +1,25 @@
+.product-header{
+    .product-header__icons{
+        display: flex;
+        justify-content: space-between;
+
+        svg{
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        .product-header__icons-menu{
+            background-color: #FFFFFF;
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+        }
+    }
+    .product-header__greetings{
+        color: #646464;
+        font-size: 1rem;
+        font-weight: 300;
+
+    }
+
+}

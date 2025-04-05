@@ -1,8 +1,19 @@
+:root {
+    --color-primary: #FF9F24; /* Primary color */
+    --color-secondary: #FFFFFF; /* Secondary color */
+    --color-text: #323232; /* Text color */
+    --color-background: #FAFAFA; /* Background color */
+    --font-primary: 'Segoe UI', sans-serif; /* Segoe UI */
+}
+
 #root {
   max-width: 1280px;
   padding: 2.5rem 1.5rem;
-  background-color: #FAFAFA;
+  background-color: var(--color-background);
+  font-family: var(--font-primary); 
+  color: var(--color-text);
 }
-body{
+
+body {
   margin: 0;
 }
