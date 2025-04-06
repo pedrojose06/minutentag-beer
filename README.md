@@ -31,6 +31,10 @@ cd minutentag-beer
 npm install
 ```
 
+### .Env File
+
+Rename the **.env.example** to **.env** file and verify that the VITE_API_URL variable is correctly set to point to the back-end server.
+
 ### Running the App
 
 ```bash
