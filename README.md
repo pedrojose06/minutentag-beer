@@ -2,6 +2,16 @@
 
 This is the front-end application for the **Minutentag Beer** project, built with **React** and **Vite**. It connects to the back-end server to display beer products, manage user interactions, and perform operations like listing, filtering, and viewing product details.
 
+## 🔮 Future Features
+
+Here are some features planned for future implementation:
+
+- **Cart Feature**: Add a shopping cart functionality to allow users to add, remove, and manage beer products. State management could be handled using **Context API** or **Jotai**, though performance considerations will be taken into account before finalizing the approach.
+
+- **Login and Signup Pages**: Implement authentication pages to allow users to create accounts and log in securely.
+
+- **Order History**: Provide users with a feature to view their past orders, including details like order date, items purchased, and total cost.
+
 ## 🧩 Project Structure
 
 This front-end complements the [Minutentag Beer Server](https://github.com/pedrojose06/minutentag-server). It communicates with the server via **GraphQL** to fetch data such as beer listings and user information.
