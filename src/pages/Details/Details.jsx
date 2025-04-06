@@ -5,6 +5,7 @@ import { GET_PRODUCT } from '../../graphql/Querys'
 import DetailsHeader from '../../components/DetailsHeader/DetailsHeader'
 import DetailsContent from '../../components/DetailsContent/DetailsContent'
 import SkuOptions from '../../components/SkuOptions/SkuOptions'
+import DetailsFooter from '../../components/DetailsFooter/DetailsFooter'
 
 const Details = () => {
   const { id } = useParams()
@@ -35,6 +36,7 @@ const Details = () => {
         setActiveSku={setActiveSku}
         activeSku={activeSku}
       />
+      <DetailsFooter product={product} />
     </div>
   )
 }

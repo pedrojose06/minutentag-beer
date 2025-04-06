@@ -19,7 +19,7 @@ const ProductCard = ({ product }) => {
         alt={product.brand}
       />
       <div className="product-card__footer">
-        <p className="product-card__price">$ {product.price.toFixed(2)}</p>
+        <p className="product-card__price">${product.price.toFixed(2)}</p>
         <div className="product-card__add">
           <IoAdd />
         </div>

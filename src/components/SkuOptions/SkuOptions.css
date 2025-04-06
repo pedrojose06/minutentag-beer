@@ -6,4 +6,19 @@
         margin-top: 0;
         padding-top: 1.5rem;
     }
+
+    .sku-options__list {
+        display: flex;
+        gap: 0.5rem;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding: 0.5rem;
+        
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
+    }
+
+    .sku-options__list::-webkit-scrollbar {
+        display: none;
+    }
 }

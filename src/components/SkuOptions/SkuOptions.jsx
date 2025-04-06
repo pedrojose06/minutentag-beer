@@ -5,7 +5,7 @@ const SkuOptions = ({ skus, setActiveSku, activeSku }) => {
   return (
     <section className="sku-options">
       <h4>Size</h4>
-      <div style={{ display: 'flex', gap: '10px' }}>
+      <div className="sku-options__list">
         {skus.map((sku) => (
           <SkuOption
             key={sku.code}

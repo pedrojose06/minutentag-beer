@@ -27,9 +27,10 @@ const DetailsContent = ({ product, activeSku }) => {
 
   return (
     <div className="details-content">
+      <div> {product.abv}</div>
       <div className="details-content__title">
         <h2>{product.brand}</h2>
-        <div className="details-content__price">$ {handleSkuPrice()}</div>
+        <div className="details-content__price">${handleSkuPrice()}</div>
       </div>
       <div className="details-content__subtitle">
         Origin: {product.origin} | Stock: {handleSkuStock()}
@@ -37,7 +38,6 @@ const DetailsContent = ({ product, activeSku }) => {
       <div className="details-content__subtitle">
         {product.style} - {product.substyle}
       </div>
-      <div>Abv: {product.abv}</div>
       <h4>Description</h4>
       <p className="details-content__description">
         {getDescription()}
