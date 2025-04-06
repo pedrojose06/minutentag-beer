@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   }
 
   return (
-    <div className="product-card" onClick={handleClick}>
+    <article className="product-card" onClick={handleClick}>
       <h3>{product.brand}</h3>
       <img
         src={`/assets${product.image}`}
@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
           <IoAdd />
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 
