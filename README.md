@@ -1,12 +1,75 @@
-# React + Vite
+# Minutentag Beer — Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the front-end application for the **Minutentag Beer** project, built with **React** and **Vite**. It connects to the back-end server to display beer products, manage user interactions, and perform operations like listing, filtering, and viewing product details.
 
-Currently, two official plugins are available:
+## 🧩 Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This front-end complements the [Minutentag Beer Server](https://github.com/pedrojose06/minutentag-server). It communicates with the server via **GraphQL** to fetch data such as beer listings and user information.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (version 18 or above)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/pedrojose06/minutentag-beer
+cd minutentag-beer
+npm install
+```
+
+### Running the App
+
+```bash
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🔗 Connecting to the Server
+
+Make sure the [Minutentag Beer Server](https://github.com/pedrojose06/minutentag-server) is running at:
+
+```
+http://localhost:4000/graphql
+```
+
+You can configure the GraphQL endpoint inside your front-end code if needed (e.g., in a `.env` file or service file).
+
+## 🧪 Example Usage
+
+The app will display a list of beers fetched via GraphQL. You can:
+
+- View a list of beers
+- Filter or search beers
+- Click on a beer to see details
+- Perform actions that trigger GraphQL queries or mutations
+
+## 🛠 Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
+
+## 📦 Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+Then preview it locally:
+
+```bash
+npm run preview
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
