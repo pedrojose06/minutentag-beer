@@ -27,7 +27,7 @@ describe('ProductsList Component', () => {
 
   it('renders no ProductCard components when products array is empty', () => {
     render(<ProductsList products={[]} />)
-    const productCards = screen.queryAllByRole('article') // Assuming ProductCard uses <article>
+    const productCards = screen.queryAllByRole('article')
     expect(productCards).toHaveLength(0)
   })
 })

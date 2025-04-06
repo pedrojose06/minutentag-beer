@@ -5,7 +5,7 @@ const DetailsFooter = () => {
   return (
     <div className="detail-footer">
       <div className="detail-footer__icon">
-        <IoBagOutline />
+        <IoBagOutline data-testid="detail-footer-icon" />
       </div>
       <button
         type="button"

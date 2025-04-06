@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { screen, render, fireEvent } from '@testing-library/react'
-import { vi, describe, it, expect } from 'vitest'
+import { vi } from 'vitest'
 import SkuOptions from './SkuOptions'
 
 describe('SkuOptions Component', () => {
@@ -53,7 +53,6 @@ describe('SkuOptions Component', () => {
 
     const activeSkuElement = screen.getByText(mockSkus[0].name).parentElement
 
-    screen.debug()
     expect(activeSkuElement).toHaveClass('sku-option--active')
   })
 })

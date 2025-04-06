@@ -11,6 +11,7 @@ const DetailsHeader = ({ product }) => {
         <IoArrowBackOutline
           onClick={backNavigation}
           className="details-top__icons"
+          data-testid="back-icon"
         />
         <h3>Details</h3>
         <IoEllipsisHorizontalSharp className="details-top__icons" />
