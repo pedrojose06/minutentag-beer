@@ -1,0 +1,46 @@
+.details-content{
+    background-color: var(--color-secondary);
+    position: relative;
+    margin-top: 0.5rem;
+    border-radius: 3rem 3rem 0 0;
+    padding: 2.5rem 2rem 0;
+
+    .details-content__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.25rem;
+
+        h2{
+            margin: 0;
+        }
+        
+        .details-content__price{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--color-primary);
+        }
+    }
+
+    .details-content__subtitle{
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #969696;
+    }
+
+    .details-content__description{
+        color: #969696;
+        font-size: 0.875rem;
+        margin-bottom: 0;
+
+        .details-content__read-more{
+            color: var(--color-primary);
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 0.25rem;
+        }
+    }
+
+
+
+}

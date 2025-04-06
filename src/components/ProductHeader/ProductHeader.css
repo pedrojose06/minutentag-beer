@@ -1,4 +1,6 @@
 .product-header{
+    padding: 2.5rem 1.5rem 0;
+
     .product-header__icons{
         display: flex;
         justify-content: space-between;

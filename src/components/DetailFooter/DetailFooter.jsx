@@ -1,3 +1,5 @@
+import './DetailFooter'
+
 const DetailFooter = () => {
   return (
     <div className="detail-footer">

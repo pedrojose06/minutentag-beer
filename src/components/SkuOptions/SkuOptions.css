@@ -1,0 +1,9 @@
+.sku-options{
+    background-color: var(--color-secondary);
+    padding: 0 1.5rem 1.5rem 1.5rem;
+
+    h4{
+        margin-top: 0;
+        padding-top: 1.5rem;
+    }
+}

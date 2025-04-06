@@ -8,7 +8,6 @@
 
 #root {
   max-width: 1280px;
-  padding: 2.5rem 1.5rem;
   background-color: var(--color-background);
   font-family: var(--font-primary); 
   color: var(--color-text);

@@ -1,0 +1,17 @@
+.sku-option{
+    border: 1px solid #969696;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    color: #969696;
+
+    &.sku-option--active{
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .sku-option__title{
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin: 0;
+    }
+}

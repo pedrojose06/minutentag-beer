@@ -1,11 +1,13 @@
-const SkuOption = ({ sku, setActiveSku }) => {
+import './SkuOption.css'
+
+const SkuOption = ({ sku, setActiveSku, activeSku }) => {
   return (
     <div
       key={sku.code}
-      style={{ border: '1px solid black', padding: '10px' }}
+      className={`sku-option${activeSku === sku.code ? ' sku-option--active' : ''}`}
       onClick={() => setActiveSku(sku.code)}
     >
-      <div>{sku.name}</div>
+      <div className="sku-option__title">{sku.name}</div>
     </div>
   )
 }

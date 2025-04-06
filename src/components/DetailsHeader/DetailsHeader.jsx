@@ -1,4 +1,5 @@
 import { IoArrowBackOutline, IoEllipsisHorizontalSharp } from 'react-icons/io5'
+import './DetailsHeader.css'
 
 const DetailsHeader = ({ product }) => {
   const backNavigation = () => {
@@ -6,9 +7,14 @@ const DetailsHeader = ({ product }) => {
   }
   return (
     <div className="details-top">
-      <IoArrowBackOutline onClick={backNavigation} />
-      <h1>Details</h1>
-      <IoEllipsisHorizontalSharp />
+      <div className="details-top__header">
+        <IoArrowBackOutline
+          onClick={backNavigation}
+          className="details-top__icons"
+        />
+        <h3>Details</h3>
+        <IoEllipsisHorizontalSharp className="details-top__icons" />
+      </div>
       <img
         src={`/assets${product.image}`}
         width={50}
