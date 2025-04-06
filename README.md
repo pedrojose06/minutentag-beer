@@ -44,9 +44,7 @@ You can configure the GraphQL endpoint inside your front-end code if needed (e.g
 The app will display a list of beers fetched via GraphQL. You can:
 
 - View a list of beers
-- Filter or search beers
 - Click on a beer to see details
-- Perform actions that trigger GraphQL queries or mutations
 
 ## 🛠 Technologies Used
 
