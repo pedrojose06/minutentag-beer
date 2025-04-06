@@ -6,6 +6,7 @@ import DetailsHeader from '../../components/DetailsHeader/DetailsHeader'
 import DetailsContent from '../../components/DetailsContent/DetailsContent'
 import SkuOptions from '../../components/SkuOptions/SkuOptions'
 import DetailsFooter from '../../components/DetailsFooter/DetailsFooter'
+import Loading from '../../components/Loading/Loading'
 
 const Details = () => {
   const { id } = useParams()
@@ -23,7 +24,7 @@ const Details = () => {
     }
   }, [product?.skus])
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <Loading />
   if (error) return <p>Error: {error.message}</p>
   if (!product) return <p>No product found</p>
 
