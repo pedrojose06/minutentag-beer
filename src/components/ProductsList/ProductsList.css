@@ -1,6 +1,7 @@
 .products-list{
     display: grid;
     gap: 1rem;
+    justify-self: center;
 }
 
 @media (min-width: 360px) {

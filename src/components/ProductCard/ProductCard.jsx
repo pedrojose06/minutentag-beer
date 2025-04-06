@@ -18,8 +18,12 @@ const ProductCard = ({ product }) => {
         height={100}
         alt={product.brand}
       />
-      <p>$ {product.price.toFixed(2)}</p>
-      <IoAdd />
+      <div className="product-card__footer">
+        <p className="product-card__price">$ {product.price.toFixed(2)}</p>
+        <div className="product-card__add">
+          <IoAdd />
+        </div>
+      </div>
     </div>
   )
 }

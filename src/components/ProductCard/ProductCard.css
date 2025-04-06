@@ -2,9 +2,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    border-radius: 8px;
+    border-radius: 0.75rem;
     background-color: #fff;
     width: auto;
-    height: 180px;
+    height: auto;
+
+    h3{
+        padding: 0 1rem;
+    }
+
+    img{
+        width: auto;
+        object-fit: cover;
+        border-radius: 0.75rem;
+        margin: 1rem;
+    }
+
+    .product-card__footer{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+
+        .product-card__price{
+            margin-left: 1rem;
+        }
+
+        .product-card__add{
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+            border-radius: 0.75rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
