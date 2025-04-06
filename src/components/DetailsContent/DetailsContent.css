@@ -23,13 +23,16 @@
     }
 
     .details-content__subtitle{
+        display: flex;
+        justify-content: space-between;
         font-size: 0.8rem;
         font-weight: 400;
-        color: #969696;
+        color: var(--color-subtext);
+        padding: 0.1rem 0;
     }
 
     .details-content__description{
-        color: #969696;
+        color: var(--color-subtext);
         font-size: 0.875rem;
         margin-bottom: 0;
 

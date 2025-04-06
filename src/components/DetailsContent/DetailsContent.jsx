@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import './DetailsContent.css'
 
 const MAX_CHARACTERS = 200
@@ -27,16 +28,22 @@ const DetailsContent = ({ product, activeSku }) => {
 
   return (
     <div className="details-content">
-      <div> {product.abv}</div>
       <div className="details-content__title">
         <h2>{product.brand}</h2>
         <div className="details-content__price">${handleSkuPrice()}</div>
       </div>
       <div className="details-content__subtitle">
-        Origin: {product.origin} | Stock: {handleSkuStock()}
+        <div>Origin: {product.origin}</div>
+        <div>Stock: {handleSkuStock()}</div>
       </div>
       <div className="details-content__subtitle">
-        {product.style} - {product.substyle}
+        <div>
+          ABV:
+          {product.abv}
+        </div>
+        <div>
+          {product.style} - {product.substyle}
+        </div>
       </div>
       <h4>Description</h4>
       <p className="details-content__description">

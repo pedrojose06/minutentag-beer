@@ -14,7 +14,7 @@
         margin-bottom: 1rem;
         
         .details-top__icons{
-            background-color: #FFFFFF;
+            background-color: var(--color-secondary);
             border-radius: 0.75rem;
             padding: 0.5rem;
         }
